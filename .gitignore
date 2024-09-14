@@ -1,0 +1,33 @@
+# Python
+*.pyc
+
+# Vim
+*.swp
+
+.vscode
+
+# c/c++ language server
+.ccls-cache
+
+# jupyter notebook
+.ipynb_checkpoints
+
+# Rust build directory
+target/*
+!target/CATKIN_IGNORE
+
+# random bagfiles that I use for testing and don't want to commit by accident
+*.bag
+
+
+# Ignore .vscode folder
+**/.vscode/
+# Ignore build directories in all packages
+**/build/
+# Ignore history directories
+**/history/
+# Ignore devel directories
+**/devel/
+
+# ignore kitti_folder directory
+kitti_folder/
