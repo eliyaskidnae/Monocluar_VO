@@ -110,11 +110,11 @@ The results of the visual odometry are displayed in two windows:
 
 <div style="display: flex; justify-content: space-between;">
   <div> 
-    <img src="media/Trajectory_path.gif" alt="Trajectory GIF" width="500" height="400" >
+    <img src="media/Trajectory_path.gif" alt="Trajectory GIF" width="400" height="400" >
      <p style="text-align: center;">Figure 1: Trajectory plot</p>
   </div>
   <div> 
-    <img src="media/Trajectory.gif" alt="Trajectory GIF" width="500" height="400">
+    <img src="media/Trajectory.gif" alt="Trajectory GIF" width="400" height="400">
      <p style="text-align: center;">Figure 1:  Road-facing camera feed</p>
 
   </div>
