@@ -11,6 +11,7 @@ int main(int argc,  char** argv) {
 
     std::string dataset_path = package_path + "/kitti_dataset" ;
     VisualOdometry visual_odom(dataset_path);
+    visual_odom.run();
     return 0;
 }
 
