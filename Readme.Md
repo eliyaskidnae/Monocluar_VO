@@ -73,9 +73,21 @@ cd Monocluar_VO
 ## Visual Odometry Overview
 ### What is Visual Odometry?
 Visual Odometry (VO) is the process of estimating a camera's motion from a sequence of images. It calculates the trajectory of the camera relative to a world coordinate system by analyzing the movement of points in the images.
+## 
+
+<div style="display: flex; justify-content: space-between;">
+  <div> 
+    <img src="media/Screenshot from 2026-03-10 00-08-17.png" alt="Trajectory GIF" width="400" height="250">
+     <p style="text-align: center;">   A block diagram showing the main components of a
+VO system.</p>
+
+  </div>
+</div>
+
 ### Monocular VO: Limitations and Advantages
 
 Monocular VO uses a single camera to estimate the camera's motion and the scene's 3D structure. Monocular VO has several advantages, such as low cost, simplicity, and ease of deployment. However, monocular VO has some limitations, such as scale ambiguity (the scale of the estimated trajectory is unknown) and drift (accumulated errors in the estimated trajectory).
+
 
 ### Other Types of VO
 1. **Stereo VO:** Uses two cameras, resolving scale ambiguity by triangulating depth directly from the stereo camera pair.
@@ -93,6 +105,14 @@ Monocular VO uses a single camera to estimate the camera's motion and the scene'
 4. **Pose Estimation:** Decompose the essential matrix into rotation and translation vectors using cv::recoverPose. This estimates the relative pose between consecutive frames.
 5. **Scale Calculation:** Monocular VO requires an external source (like GPS or ground truth data) to determine the absolute scale of motion. In this project, we use the ground truth poses from the KITTI dataset to compute the absolute scale.
 6. **Pose Integration:** The final pose is calculated by accumulating the relative poses (rotations and translations) over the entire sequence.
+
+<div style="display: flex; justify-content: space-between;">
+  <div> 
+    <img src="media/Screenshot from 2026-03-10 00-08-43.png" alt="Trajectory GIF" width="400" height="250">
+     <p style="text-align: center;">   Monocular camera VO Algorithm</p>
+
+  </div>
+</div>
 
 ## Results and Discussion
 
